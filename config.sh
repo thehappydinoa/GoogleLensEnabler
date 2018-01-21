@@ -40,9 +40,10 @@ LATESTARTSERVICE=false
 # Set what you want to show when installing your mod
 
 print_modname() {
-  ui_print "*******************************"
-  ui_print "     Magisk Module Template    "
-  ui_print "*******************************"
+  ui_print "####################################"
+  ui_print "#        Google Lens Enabler       #"
+  ui_print "# by @shadowstep at xda-developers #"
+  ui_print "####################################"
 }
 
 ##########################################################################################
@@ -63,6 +64,10 @@ REPLACE="
 # Construct your own list here, it will override the example above
 # !DO NOT! remove this if you don't need to replace anything, leave it empty as it is now
 REPLACE="
+/system/etc/sysconfig/google_build.xml
+/system/etc/sysconfig/nexus.xml
+/system/etc/sysconfig/pixel_2017.xml
+/system/etc/sysconfig/pixel_2017_exclusive.xml
 "
 
 ##########################################################################################
@@ -85,6 +90,10 @@ set_permissions() {
 
   # The following is default permissions, DO NOT remove
   set_perm_recursive  $MODPATH  0  0  0755  0644
+  set_perm  $MODPATH/system/etc/sysconfig/google_build.xml  0  0  0644
+  set_perm  $MODPATH/system/etc/sysconfig/nexus.xml  0  0  0644
+  set_perm  $MODPATH/system/etc/sysconfig/pixel_2017.xml  0  0  0644
+  set_perm  $MODPATH/system/etc/sysconfig/pixel_2017_exclusive.xml  0  0  0644
 }
 
 ##########################################################################################
