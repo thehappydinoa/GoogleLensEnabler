@@ -5,11 +5,11 @@ This module systemless-ly adds the required xml files (taken from the Pixel 2 XL
 
 ## CHANGELOG
 
-### v2.0
-- Update for Magisk v15.0 (Template version 1500)
-
 ### v1.0
 - Initial release for Magisk v14.0 (Template version 1400)
+
+### v2.0
+- Update for Magisk v15.0 (Template version 1500)
 
 ## Links
 * [GitHub](https://github.com/Magisk-Modules-Repo/GoogleLensEnabler)
